@@ -9,26 +9,26 @@
 
  The structures present include the following:
 
- Dynamic Array
- Linked List
- Doubly-Linked-List
- Skip List
+ Dynamic Array\\
+ Linked List\\
+ Doubly-Linked-List\\
+ Skip List\\
 
- Stack (list and array based)
- Queue (list and array based)
- Deque (list and array based)
+ Stack (list and array based)\\
+ Queue (list and array based)\\
+ Deque (list and array based)\\
 
- Hash Table (all collision methods: linear probing, quadratic probing, double hashing)
+ Hash Table (all collision methods: linear probing, quadratic probing, double hashing)\\
 
- Binary Tree
- AVL Tree
- Splay Tree
- Red-Back Tree
+ Binary Tree\\
+ AVL Tree\\
+ Splay Tree\\
+ Red-Back Tree\\
 
- Min Heap
- Max Heap
+ Min Heap\\
+ Max Heap\\
 
- Graphs (depth-first search, breadth first search, A*, Djikstra's)
+ Graphs (depth-first search, breadth first search, A*, Djikstra's)\\
 
 ## Dynamic Array
 
