@@ -42,13 +42,13 @@
 
  Find (int find(T element)) - Finds the first instance of a given element. Returns the index of the first instance (requires data type T to have an overloaded == operator)
 
- Findall (DynamicArray<int> findall(T element))- Finds all instances of a given element. Returns a Dynamic Array of the indices where the element is located (requires data type T to have an overloaded == operator)
+ Findall (DynamicArray\<int> findall(T element))- Finds all instances of a given element. Returns a Dynamic Array of the indices where the element is located (requires data type T to have an overloaded == operator)
 
  Access (via overloaded [] operator) - returns the value at a given position
 
  Print (via overloaded << operator) - prints all of the elements of the array in the format "{a, b, c}" (requires data type T to have an overloaded << operator)
 
  Copy (via overloaded = operator) - creates a deep copy of a Dynamic Array
- 
+
  
  
