@@ -30,11 +30,11 @@
 
  Graphs (depth-first search, breadth first search, A*, Djikstra's)
 
-# Dynamic Array
+## Dynamic Array
 
  A dynamic array is an array that will vary its size as elements are inserted and removed. By doubling the size of the array any time that too many elements are inserted, the dynamic array is able to run with an average time complexity of O(1). If the array did not double in size and instead simply grew 1 additional spot for each entry, the time complexity would be O(n) since every exisiting element would need to be copied every single time a new element was inserted.
 
- ~~~~~~~~~~Methods for the Dynamic array~~~~~~~~~~~~
+ ### Methods for the Dynamic array
  
  Insert (void insert(T element)) - inserts an element at the end of the Dynamic Array. Resizes the array if the element would overflow the array
  Remove (void remove(int position)) - removes an element at a given position. Resizes the array if the number of elements decreases to 1/2 the size allocated
