@@ -44,7 +44,9 @@
 
  Find (int find(T element)) - Finds the first instance of a given element. Returns the index of the first instance (requires data type T to have an overloaded == operator)
 
- Findall (DynamicArray\<int> findall(T element))- Finds all instances of a given element. Returns a Dynamic Array of the indices where the element is located (requires data type T to have an overloaded == operator)
+ Findall (DynamicArray\<int> findall(T element)) - Finds all instances of a given element. Returns a Dynamic Array of the indices where the element is located (requires data type T to have an overloaded == operator)
+
+ Sort (void sort()) - Uses Mergesort to sort the elements in the list from smallest to largest in O(nlogn) time
 
  Access (via overloaded [] operator) - returns the value at a given position
 

@@ -39,6 +39,46 @@ class DynamicArray{
             }
         }
 
+        void mergeSort(T *A, int left, int right){
+            if(left >= right){
+                return;
+            }
+            int mid = (left + right)/2;
+            mergeSort(A,left,mid);
+            mergeSort(A,mid+1,right);
+            merge(A, left, mid, right);
+        }
+
+        void merge(T *A, int left, int mid, int right){
+            int i=left, k = left, j = mid + 1;
+            T temp[numElements];
+            while(i <= mid && j <= right){
+                if(A[i] < A[j]){
+                    temp[k] = A[i];
+                    k++;
+                    i++;
+                }
+                else{
+                    temp[k] = A[j];
+                    k++;
+                    j++;
+                }
+            }
+            while(i <= mid){
+                temp[k] = A[i];
+                k++;
+                i++;
+            }
+            while(j <= right){
+                temp[k] = A[j];
+                k++;
+                j++;
+            }
+            for(i = left;i<k;i++){
+                A[i] = temp[i];
+            }
+        }
+
     public:
 
         //Constructor
@@ -99,6 +139,11 @@ class DynamicArray{
                 }
             }
             return instances;
+        }
+
+        //Merge sort
+        void sort(){
+            mergeSort(arr,0,numElements-1);
         }
 
         //get element at position
