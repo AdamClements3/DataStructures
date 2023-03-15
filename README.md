@@ -54,5 +54,11 @@
 
  Copy (via overloaded = operator) - creates a deep copy of a Dynamic Array
 
+## Linked List
+
+ A Linked List is a chain of nodes that each point to the next node in the list. By doing so, linked lists are capable of growing and shrinking in space to allow for dynamic storage, contrary to basic arrays. Despite this improvement, Nodes in a linked list do not know in which position they lie, so in order to traverse the list, a program must begin at the head of the list and work its way to the tail. Despite this drawback, linked lists are still very useful especially for implementing stacks and queues, 2 other data structures. There are two main types of linked lists: singly-linked and doubly-linked. The difference between the two is as follows: The nodes in a singly linked list only point to the next node in the list, and the list only has 1 point of reference for access, the head. On the other hand, the nodes in a doubly linked list point to the next and previous nodes in the list, and the list itself has two reference points for accessing, the head and the tail.
+
+ ![Linked Lists](https://res.cloudinary.com/practicaldev/image/fetch/s--QTk9XbRm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/kvnpce96zqdxu73hp6oe.png)
+
  
  
