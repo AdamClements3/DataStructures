@@ -93,7 +93,7 @@ class DynamicArray{
             delete[] arr;
         }
 
-        //get number of elements in the array
+        //get the number of elements in the array
         int size() const {
             return numElements;
         }
@@ -106,10 +106,12 @@ class DynamicArray{
             arr[numElements++] = element;
         }
 
-        //remove an element (based on position)
+        //remove an element at position pos
         void remove(int pos){
-            //create a new array and move all of the elements except for arr[pos] to the new array
-            //don't worry about resizing on removal
+            if(pos < 0 || pos > numElements-1){
+                std::cerr << "position is invalid" << std::endl;
+                return;
+            }
             for(int i=0,j=0;i<numElements;i++,j++){
                 if(i == pos){j++;}
                 arr[i] = arr[j];
